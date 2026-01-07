@@ -3,148 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TreeMan Nursery | Landscaping & Flowers</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<!-- Font Awesome -->
+<title>Service Suspended | Licence Required</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 <style>
-* { box-sizing:border-box; margin:0; padding:0; font-family:'Raleway', sans-serif;}
-body { background-color:#f4f9f4; color:#333; line-height:1.6; overflow-x:hidden;}
-header { background-color:#2f6f3f; color:#fff; padding:20px 0; text-align:center;}
-header img { max-height:80px; margin-bottom:10px;}
-nav { text-align:center; margin-top:10px;}
-nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; transition: color 0.3s;}
-nav a:hover { color:#d1c57c;}
-.hero { position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; padding:20px; animation: fadeIn 1s ease-in;}
-.hero img { max-width:100%; height:auto; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.2);}
-.hero-text { position:absolute; color:#fff; text-align:center; font-size:2rem; font-weight:bold; text-shadow:2px 2px 10px rgba(0,0,0,0.7); animation: slideDown 1s ease-in-out;}
-.view-gallery-btn { margin-top:20px; padding:12px 25px; background-color:#2f6f3f; color:#fff; border:none; font-size:1rem; border-radius:5px; cursor:pointer; transition: all 0.3s; font-weight:bold;}
-.view-gallery-btn:hover { background-color:#1f4d29; transform:scale(1.05);}
-section { padding:60px 20px; max-width:1200px; margin:0 auto;}
-h2.section-title { text-align:center; margin-bottom:40px; font-size:2rem; color:#2f6f3f; display:flex; align-items:center; justify-content:center; gap:10px;}
-.services { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:20px;}
-.card { background-color:#fff; border-radius:10px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer; animation: fadeInUp 0.8s ease forwards; opacity:0;}
-.card:hover { transform:translateY(-5px);}
-.card img { width:100%; height:200px; object-fit:cover; border-bottom:1px solid #eee;}
-.card-body { padding:20px;}
-.card-body h3 { margin-bottom:15px; color:#2f6f3f; display:flex; align-items:center; gap:5px;}
-.card-body p { font-size:0.95rem;}
-.contact { background-color:#2f6f3f; color:#fff; padding:40px 20px; text-align:center; animation: fadeIn 1s ease;}
-.contact a { color:#d1c57c; text-decoration:none; font-weight:bold;}
-footer { background-color:#1f4d29; color:#fff; text-align:center; padding:20px; animation: fadeIn 1s ease;}
-/* Lightbox slider */
-#lightbox { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.95); justify-content:center; align-items:center; z-index:1000; overflow:hidden; }
-#lightbox img { max-width:90%; max-height:90%; border-radius:10px; position:absolute; transition: transform 0.5s ease-in-out; }
-#lightbox span { position:absolute; top:20px; right:40px; color:#fff; font-size:2rem; cursor:pointer; z-index:1010;}
-#prev, #next { position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:3rem; cursor:pointer; z-index:1010; user-select:none; padding:10px;}
-#prev { left:30px;}
-#next { right:30px;}
-@media(max-width:768px){ .hero img{ max-width:100%; } .hero-text{ font-size:1.5rem; } }
-@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
-@keyframes slideDown { from{opacity:0; transform:translateY(-50px);} to{opacity:1; transform:translateY(0);} }
-@keyframes fadeInUp { from{opacity:0; transform:translateY(30px);} to{opacity:1; transform:translateY(0);} }
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:'Raleway', sans-serif;
+}
+
+body{
+  background:#f4f9f4;
+  color:#333;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.wrapper{
+  max-width:1000px;
+  padding:40px 20px;
+}
+
+/* Header */
+header{
+  background:#2f6f3f;
+  color:#fff;
+  padding:50px 20px;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+  margin-bottom:40px;
+}
+
+header img{
+  max-height:90px;
+  margin-bottom:15px;
+}
+
+header h1{
+  font-size:2.6rem;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:1.15rem;
+  opacity:.95;
+}
+
+/* Notice */
+.notice{
+  background:#ffffff;
+  border-radius:20px;
+  padding:45px 30px;
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.notice h2{
+  font-size:2.3rem;
+  color:#2f6f3f;
+  margin-bottom:20px;
+}
+
+.notice p{
+  font-size:1.05rem;
+  line-height:1.8;
+  color:#555;
+  margin-bottom:28px;
+}
+
+.notice strong{
+  color:#1f4d29;
+}
+
+/* Actions */
+.actions{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:15px 32px;
+  border-radius:14px;
+  font-weight:700;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn-whatsapp{
+  background:#25D366;
+  color:#fff;
+}
+
+.btn-whatsapp:hover{
+  background:#128C7E;
+  transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+  margin-top:40px;
+  font-size:.9rem;
+  color:#666;
+}
+
+@media(max-width:600px){
+  header h1{font-size:2.2rem}
+  .notice h2{font-size:1.9rem}
+}
 </style>
 </head>
-<body>
 
-<!-- Header -->
+<body>
+<div class="wrapper">
+
 <header>
   <img src="logo-images/treeman-nursery-logo.png" alt="TreeMan Nursery Logo">
-  <nav>
-    <a href="#services"><i class="fas fa-seedling"></i> Services</a>
-    <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
-  </nav>
+  <h1>Service Temporarily Suspended</h1>
+  <p>Licence payment required to restore access</p>
 </header>
 
-<!-- Hero/Main Image -->
-<section class="hero">
-  <img src="logo-images/11.jpg" alt="Main View">
-  <div class="hero-text">Transforming Spaces with Landscaping & Flowers</div>
-  <button class="view-gallery-btn" onclick="openLightbox(0)"><i class="fas fa-images"></i> View Gallery</button>
-</section>
+<div class="notice">
+  <h2>Unpaid Licence Notice</h2>
 
-<!-- Services Section -->
-<section id="services">
-  <h2 class="section-title"><i class="fas fa-leaf"></i> Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <img src="logo-images/1.jpg" alt="Landscaping">
-      <div class="card-body">
-        <h3><i class="fas fa-tree"></i> Landscaping</h3>
-        <p>We design and build beautiful outdoor spaces tailored to your needs and environment.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="logo-images/3.jpg" alt="Flower Sales">
-      <div class="card-body">
-        <h3><i class="fas fa-spa"></i> Flower Sales</h3>
-        <p>Fresh flowers for homes, events, or gifts. Wide variety of blooms available.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="logo-images/4.jpg" alt="Garden Design">
-      <div class="card-body">
-        <h3><i class="fas fa-pagelines"></i> Garden Design</h3>
-        <p>Creative and sustainable garden layouts to transform your spaces into green havens.</p>
-      </div>
-    </div>
+  <p>
+    This website has been <strong>temporarily suspended</strong> due to an
+    <strong>unpaid Sentinel X service licence</strong>.
+  </p>
+
+  <p>
+    To restore access, the business owner must contact
+    <strong>Sentinel Nexus Systems</strong> and request
+    <strong>re-invitation to the Sentinel X Marketplace</strong>.
+  </p>
+
+  <p>
+    Reactivation will be completed after licence verification and
+    confirmation of payment.
+  </p>
+
+  <div class="actions">
+    <a
+      class="btn btn-whatsapp"
+      target="_blank"
+      href="https://wa.me/263787556929?text=Hello%20Sentinel%20Nexus%20Systems,%20I%20am%20requesting%20re-invitation%20to%20the%20Sentinel%20X%20Marketplace.%20Payment%20is%20ready%20to%20be%20made.%20Please%20advise%20on%20reactivation."
+    >
+      <i class="fab fa-whatsapp"></i>
+      Request Reactivation
+    </a>
   </div>
-</section>
-
-<!-- Lightbox Slider -->
-<div id="lightbox">
-  <span onclick="closeLightbox()">&times;</span>
-  <span id="prev" onclick="changeSlide(-1)">&#10094;</span>
-  <span id="next" onclick="changeSlide(1)">&#10095;</span>
-  <img id="lightbox-img" src="" alt="Full View">
 </div>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-  <h2>Contact Us <i class="fas fa-handshake"></i></h2>
-  <p>Phone: <a href="tel:+263775238520">+263 775 238 520</a></p>
-  <p>WhatsApp: <a href="https://wa.me/263775238520" target="_blank"><i class="fab fa-whatsapp"></i> Chat Now</a></p>
-  <p>Visit us: Bulawayo, Gwabalanda at Luveve Car Park next to Maplanka Shopping Centre</p>
-</section>
-
-<!-- Footer -->
 <footer>
-  <p>&copy; 2025 TreeMan Nursery. All rights reserved.</p>
+  © 2026 Sentinel Nexus Systems PBC · Service Control Notice
 </footer>
 
-<script>
-const galleryImages = [
-  'logo-images/1.jpg','logo-images/3.jpg','logo-images/4.jpg','logo-images/5.jpg',
-  'logo-images/6.jpg','logo-images/7.jpg','logo-images/8.jpg','logo-images/9.jpg',
-  'logo-images/10.jpg','logo-images/12.jpg','logo-images/13.jpg','logo-images/14.jpg','logo-images/15.jpg'
-];
-
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-let currentIndex = 0;
-
-function openLightbox(index){
-  currentIndex = index;
-  lightboxImg.src = galleryImages[currentIndex];
-  lightbox.style.display = 'flex';
-}
-
-function closeLightbox(){
-  lightbox.style.display = 'none';
-}
-
-function changeSlide(n){
-  currentIndex += n;
-  if(currentIndex < 0) currentIndex = galleryImages.length -1;
-  if(currentIndex >= galleryImages.length) currentIndex = 0;
-  lightboxImg.style.transform = (n > 0 ? 'translateX(100vw)' : 'translateX(-100vw)');
-  setTimeout(()=> {
-    lightboxImg.src = galleryImages[currentIndex];
-    lightboxImg.style.transform = 'translateX(0)';
-  }, 50);
-}
-</script>
-
+</div>
 </body>
 </html>
